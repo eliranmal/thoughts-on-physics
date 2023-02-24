@@ -1,21 +1,9 @@
 
-# collective excitations
-
-what if particles,  
-are holes in quantized space-time;  
-a true emptiness?  
+# thoughts on physics &nbsp; <sub><sub><sup><sup>_philosophical conjectures reduced to haiku poems_</sup></sup></sub></sub>
 
 
-# at a distance
-
-Bit from It. like the  
-spookieness of prime numbers,  
-or entanglement.  
+[eliranmal.github.io/thoughts-on-physics][1]
 
 
-# absolute colors
 
-from space, ingrained with  
-fixed acceleration, out  
-pop gluon flavors  
-
+[1]: https://eliranmal.github.io/thoughts-on-physics/

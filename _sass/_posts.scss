@@ -1,0 +1,12 @@
+ul.post-list {
+  list-style-type: none;
+
+  li {
+    margin-block-end: 3em;
+
+    p {
+      font-weight: 500;
+      font-style: italic;
+    }
+  }
+}

@@ -1,7 +1,36 @@
 
+
+### site meta
+
 title: thoughts on physics
 description: philosophical conjectures reduced to haiku poems
+author: eliran malka
+
+
+### host settings
+
+# omitting http:// at the start forces HTTPS
+domain: eliranmal.github.io
+url: https://eliranmal.github.io
+baseurl: /thoughts-on-physics
+# output URLs without file extensions
+permalink: pretty
+
+
+### site structure
+
+# use this in posts to end the excerpt stanza
+excerpt_separator: <!-- read more... -->
+
+
+### build settings
 
 remote_theme: pages-themes/architect@v0.2.0
 plugins:
-- jekyll-remote-theme
+  - jekyll-remote-theme
+sass:
+  style: compact
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

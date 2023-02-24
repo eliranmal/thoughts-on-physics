@@ -1,0 +1,15 @@
+---
+---
+
+// this file takes over the original path of the architect theme file
+// as means of extension, and to avoid changing hrefs in the document head.
+
+// base theme
+@import "architect";
+
+// theme overrides
+@import "architect-overrides";
+
+// custom site styles
+@import "posts";
+
