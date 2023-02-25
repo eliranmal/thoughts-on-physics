@@ -15,6 +15,7 @@ url: https://eliranmal.github.io
 baseurl: /thoughts-on-physics
 # output URLs without file extensions
 permalink: pretty
+google_analytics: 'G-TNGTP927M5'
 
 
 ### site structure
