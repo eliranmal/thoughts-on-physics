@@ -5,4 +5,10 @@ html, body {
 aside#sidebar {
   padding-block: 2rem;
   font-size: .75rem;
+  background: none;
+
+  @media only screen and (min-width: 768px) {
+    position: sticky;
+    top: 0;
+  }
 }
