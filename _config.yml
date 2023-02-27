@@ -14,7 +14,7 @@ domain: eliranmal.github.io
 url: https://eliranmal.github.io
 baseurl: /thoughts-on-physics
 # output URLs without file extensions
-permalink: pretty
+permalink: /:categories/:title/
 google_analytics: G-TNGTP927M5
 
 
