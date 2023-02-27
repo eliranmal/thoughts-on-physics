@@ -7,5 +7,27 @@ ul.post-list {
     p {
       margin-block: .5em 1.5em;
     }
+
+    .post-tags {
+      .post-tag {
+        display: inline-block;
+        margin-inline-end: .667em;
+        padding-inline: .333em;
+        font: .8em 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+        white-space: nowrap;
+        color: #fff;
+        background-color: #9ddcff;
+        transition: background-color .333s;
+
+        &:last-of-type {
+          margin-inline-end: 0;
+        }
+
+        &:hover,
+        &:focus {
+          background-color: #2e7bcf;
+        }
+      }
+    }
   }
 }
