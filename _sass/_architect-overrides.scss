@@ -2,6 +2,20 @@ html, body {
   font-size: 18px;
 }
 
+header {
+  a.button {
+    width: unset;
+    height: unset;
+    padding: .75em 1em;
+    border: 2px solid;
+    border-radius: 0.4em;
+
+    @media only screen and (min-width: 768px) {
+      background: none;
+    }
+  }
+}
+
 aside#sidebar {
   padding-block: 2rem;
   font-size: .75rem;

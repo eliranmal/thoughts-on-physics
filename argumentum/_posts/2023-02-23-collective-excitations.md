@@ -2,6 +2,7 @@
 layout: post
 title:  "collective excitations"
 date:   2023-02-23 01:59:11 +0200
+# category: "argumentum"
 ---
 
 what if particles,  

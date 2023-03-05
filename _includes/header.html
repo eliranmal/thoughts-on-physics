@@ -1,8 +1,37 @@
 <header>
     <div class="inner">
-        <a href="{{ '/' | absolute_url }}">
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <!-- the header data is defined assuming there's a single category on the site -->
+
+        {%- if page.categories.size > 0 -%}
+            {%- assign first_category = page.categories | first -%}
+        {%- else -%}
+            {%- assign first_category = site.categories | first | first -%}
+        {%- endif -%}
+
+        {%- assign site_title = site.title | default: site.github.repository_name -%}
+        {%- assign category_title = first_category | replace: '-', ' ' -%}
+        {%- assign category_url = '/' | append: first_category | append: '/' -%}
+        {%- assign site_tagline = site.description | default: site.github.project_tagline -%}
+
+        {%- if page.url contains first_category -%}
+            {%- assign page_title = category_title -%}
+            {%- assign page_tagline = 'my ' | append: site_tagline -%}
+            {%- assign switcher_title = site_title -%}
+            {%- assign home_url = category_url -%}
+            {%- assign switcher_url = '/' -%}
+        {%- else -%}
+            {%- assign page_title = site_title -%}
+            {%- assign page_tagline = 'popular ' | append: site_tagline -%}
+            {%- assign switcher_title = category_title -%}
+            {%- assign home_url = '/' -%}
+            {%- assign switcher_url = category_url -%}
+        {%- endif -%}
+
+        <a href="{{ home_url | absolute_url }}">
+            <h1>{{ page_title }}</h1>
         </a>
-        <h2>{{ site.description | default: site.github.project_tagline }}</h2>
+        <h2>{{ page_tagline }}</h2>
+
+        <a href="{{ switcher_url | absolute_url }}" class="button"><small>switch to</small> {{ switcher_title }}</a>
     </div>
 </header>

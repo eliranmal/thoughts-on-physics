@@ -10,10 +10,21 @@ layout: base
   {% assign posts = site.posts %}
 {% endif %}
 
+{%- assign category_path_seg = page.url | split: '/' | slice: 1 -%}
+{%- assign category_path_seg_str = category_path_seg | first -%}
 
 {%- if posts.size > 0 -%}
   <ul class="post-list">
     {%- for post in posts -%}
+      {%- if category_path_seg == empty -%}
+        {%- if post.categories.size > 0 -%}
+          {%- continue -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- unless post.categories contains category_path_seg_str -%}
+          {%- continue -%}
+        {%- endunless -%}
+      {%- endif -%}
     <li>
       <h1><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
       {{ post.excerpt }}
