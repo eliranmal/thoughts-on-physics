@@ -8,6 +8,14 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
+
+          {%- assign path_vars = page.url | split: '/' | slice: 1 -%}
+          {%- assign category_path_var = path_vars | first -%}
+
+          {%- if category_path_var != nil and site.categories contains category_path_var -%}
+          <h3>{{ category_path_var | replace: '-', ' ' }}</h3>
+          {%- endif -%}
+
           {{ content }}
         </section>
 

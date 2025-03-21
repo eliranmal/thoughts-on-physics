@@ -2,6 +2,30 @@ html, body {
   font-size: 18px;
 }
 
+header {
+  h1 {
+    span {
+      clip-path: inset(0 0 0 0);
+      //animation: clip-right 1s steps(10, jump-none) 5s 10;
+      animation: clip-right 1s steps(10, jump-none) 0s 1;
+      //animation-iteration-count: infinite;
+    }
+  }
+}
+
+
+@keyframes clip-right {
+  0% {
+    clip-path: inset(0 0 0 0);
+  }
+  50% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
 aside#sidebar {
   padding-block: 2rem;
   font-size: .75rem;

@@ -2,6 +2,7 @@
 layout: post
 title:  "absolute colors"
 date:   2023-02-03 01:59:11 +0200
+tags: wat foo-bar
 ---
 
 from space, ingrained with  

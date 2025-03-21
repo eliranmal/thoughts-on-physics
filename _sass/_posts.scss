@@ -9,25 +9,35 @@ ul.post-list {
     }
 
     .post-tags {
-      .post-tag {
-        display: inline-block;
-        margin-inline-end: .667em;
-        padding-inline: .333em;
-        font: .8em 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
-        white-space: nowrap;
-        color: #fff;
-        background-color: #9ddcff;
-        transition: background-color .333s;
+      margin-block: .5em;
+      font-size: .8em;
+    }
+  }
+}
 
-        &:last-of-type {
-          margin-inline-end: 0;
-        }
+.post-tags {
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
 
-        &:hover,
-        &:focus {
-          background-color: #2e7bcf;
-        }
-      }
+  label {
+    margin-inline-end: .667em;
+  }
+
+  .post-tag {
+    display: inline-block;
+    margin-inline-end: .667em;
+    padding-inline: .333em;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #9ddcff;
+    transition: background-color .333s;
+
+    &:last-of-type {
+      margin-inline-end: 0;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #2e7bcf;
     }
   }
 }
